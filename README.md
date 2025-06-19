@@ -24,7 +24,7 @@ This project was built as part of an internship phase, with a strict 2‑week ti
 - **Deliverables :**  
   - `Customer_LTV.ipynb` notebook (fully reproducible)  
   - `customer_ltv_segments.csv` with predicted LTV scores  
-  - PDF report (`customer_ltv_report.pdf`) summarising approach & findings  
+  - Report (`Customer Lifetime Value Prediction Model.docx`) summarising approach & findings  
 
 ---
 
@@ -38,7 +38,7 @@ This project was built as part of an internship phase, with a strict 2‑week ti
 | **UnitPrice**   | Price per unit                           |
 | **Country**     | Customer location                        |
 
-> **Note:** The raw CSV (`customer_segmentation.csv`) is included for convenience. Remove or anonymise it if your org’s policy requires.
+> **Note:** The raw CSV (`customer_segmentation.csv`) is taken from `https://www.kaggle.com/datasets/sergeymedvedev/customer_segmentation`. Remove or anonymise it if your org’s policy requires.
 
 ---
 
