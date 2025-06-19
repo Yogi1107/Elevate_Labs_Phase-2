@@ -38,7 +38,7 @@ This project was built as part of an internship phase, with a strict 2‑week ti
 | **UnitPrice**   | Price per unit                           |
 | **Country**     | Customer location                        |
 
-> **Note:** The raw CSV (`customer_segmentation.csv`) is taken from `https://www.kaggle.com/datasets/sergeymedvedev/customer_segmentation`. Remove or anonymise it if your org’s policy requires.
+> **Note:** The raw CSV (`customer_segmentation.csv`) is taken from [Dataset URL](`https://www.kaggle.com/datasets/sergeymedvedev/customer_segmentation`). Remove or anonymise it if your org’s policy requires.
 
 ---
 
@@ -100,9 +100,7 @@ rfm["Segment"] = pd.qcut(
 ```
 
 ### Export
-```bash
 Saves customer_ltv_segments.csv
-```
 High‑LTV customers (top 33 %) account for ~70 % of projected revenue—prioritise retention campaigns here.
 
 ## Contributing
