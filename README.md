@@ -3,19 +3,15 @@
 Predict the *future revenue potential* of each customer using classic RFM metrics and a Random Forest Regressor.  
 This project was built as part of an internship phase, with a strict 2‑week timeline and a 1–2 page report requirement.
 
-![CLV Boxplot](assets/boxplot_ltv.png)
-
 ---
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Dataset](#dataset)
-3. [Project Structure](#project-structure)
-4. [Quick Start](#quick-start)
-5. [Usage](#usage)
-6. [Results](#results)
-7. [Contributing](#contributing)
-8. [License](#license)
+3. [Quick Start](#quick-start)
+4. [Usage](#usage)
+5. [Results](#results)
+6. [Contributing](#contributing)
 
 ---
 
@@ -43,15 +39,6 @@ This project was built as part of an internship phase, with a strict 2‑week ti
 | **Country**     | Customer location                        |
 
 > **Note:** The raw CSV (`customer_segmentation.csv`) is included for convenience. Remove or anonymise it if your org’s policy requires.
-
----
-
-## Project Structure
-.
-├── Customer_LTV.ipynb # Main notebook
-├── customer_segmentation.csv # Raw data (ISO‑8859‑1 encoding)
-├── customer_ltv_segments.csv # Output with LTV predictions
-├── customer_ltv_report.pdf # 1–2 page project summary
 
 ---
 
@@ -93,7 +80,8 @@ model = RandomForestRegressor(
 model.fit(X_train, y_train)
 ```
 
-## Evaluation
+## Results
+### Evaluation
 
 ```python
 y_pred = model.predict(X_test)
@@ -102,7 +90,7 @@ rmse = np.sqrt(mse)
 mae  = mean_absolute_error(y_test, y_pred)
 ```
 
-## Segmentation
+### Segmentation
 
 ```python
 rfm["Segment"] = pd.qcut(
@@ -111,7 +99,7 @@ rfm["Segment"] = pd.qcut(
 )
 ```
 
-## Export
+### Export
 ```bash
 Saves customer_ltv_segments.csv
 ```
